@@ -48,8 +48,8 @@ describe("index.html", () => {
       // the second child should be a <body> tag
       const hint2 = "Include a <body> element nested inside the <html> element";
       expect(htmlElement, hint2).to.have.descendant("body");
-    } );
-    
+    });
+
     it("has a language attribute in the <html> tag", () => {
       const htmlElement = document.querySelector("html");
       expect(htmlElement).to.have.attribute("lang", "en");
